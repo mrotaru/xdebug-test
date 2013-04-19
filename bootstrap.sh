@@ -11,4 +11,5 @@ sudo apt-get install -y php5-dev
 sudo pecl install xdebug
 sudo cp /vagrant/xdebug.ini /etc/php5/apache2/conf.d
 sudo cp /vagrant/debug_me.php /var/www
+sudo cp /vagrant/phpinfo.php /var/www
 sudo /etc/init.d/apache2 restart
