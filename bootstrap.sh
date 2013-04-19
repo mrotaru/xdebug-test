@@ -6,5 +6,9 @@ echo mysql-server-5.0 mysql-server/root_password password asd | debconf-set-sele
 echo mysql-server-5.0 mysql-server/root_password_again password asd | debconf-set-selections
 sudo apt-get install -y mysql-server mysql-client
 sudo apt-get install -y php5-mysql
-sudo apt-get install -y php5-xdebug
+sudo apt-get install -y php-pear
+sudo apt-get install -y php5-dev
+sudo pecl install xdebug
+sudo cp /vagrant/xdebug.ini /etc/php5/apache2/conf.d
+sudo cp /vagrant/debug_me.php /var/www
 sudo /etc/init.d/apache2 restart
