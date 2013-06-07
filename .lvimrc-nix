@@ -1,0 +1,16 @@
+let g:vdebug_options = {
+    \ 'debug_file': 'vdebug_log',
+    \ 'debug_file_level': 2,
+    \ 'watch_window_style': 'expanded',
+    \ 'marker_default': '*',
+    \ 'continuous_mode': 0,
+    \ 'ide_key': '',
+    \ 'break_on_open': 1,
+    \ 'on_close': 'detach',
+    \ 'path_maps': {'/var/www': '~/code/xdebug-test'},
+    \ 'marker_closed_tree': '+',
+    \ 'timeout': 20,
+    \ 'port': 9001,
+    \ 'marker_open_tree': '-',
+    \ 'debug_window_level': 1,
+    \ 'server': '33.33.33.10' }
